@@ -1,0 +1,202 @@
+/* FONTES */
+@font-face {
+    font-family: 'myfont';
+    src: url('arquivos/fontes/idroid.otf') format(opentype);
+}
+
+@font-face {
+    font-family: 'myfont2';
+    src: url('arquivos/fontes/bebasn.ttf') format(opentype);
+}
+
+/* CORES */
+:root {
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --font-padrao: arial, verdana, helveltica, sans-serif;
+    --font-destaque: 'myfont2', cursive;
+    --font-android: 'myfont', cursive;
+}
+
+* {
+    /* *(asterisco)Aplicar estilo em todo o site*/
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+/* RESPONSIVIDADE*/
+body {
+    background-color: var(--cor1);
+
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 850px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 3px 3px 10px #063D1E;
+    border-radius: 0px 0px 10px 10px;
+
+}
+
+main img {
+    width: 100%;
+}
+
+iframe {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+
+
+/*CABEÇALHO */
+header {
+    text-align: center;
+    background-image: linear-gradient(to top, var(--cor5), var(--cor3));
+    font-family: "arial";
+    color: white;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.305);
+
+
+
+}
+
+header>h1 {
+    margin-top: 0px;
+    padding: 25px;
+    font-family: var(--font-destaque);
+    font-size: 50px;
+    font-weight: lighter;
+    text-shadow: 2px 2px 0px #00000032;
+}
+
+header>h2 {
+    font-family: var(--font-padrao);
+    font-weight: lighter;
+    max-width: 600px;
+    min-width: 300px;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-shadow: 2px 2px 0px #00000032;
+    padding-bottom: 80px;
+
+}
+
+nav {
+    padding: 10px;
+    width: 100%;
+
+}
+
+nav>a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: serif;
+    font-weight: normal;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: .5s;
+
+}
+
+/* Efeito do menu de navegação do cabeçalho */
+nav>a:hover {
+    background-color: #3ddc85a2;
+    padding: 10px;
+    width: 50%;
+}
+
+/* CORPO DA PÁGINA*/
+
+/* TÍTULO DO TEXTO */
+main h1 {
+    font-family: var(--font-android);
+    text-align: center;
+    color: #2FA866;
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+main h2 {
+    font-family: var(--font-android);
+    color: var(--cor4);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    margin: 50px 0px 30px 0px;
+
+
+}
+
+main p {
+    margin: 20px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 17px;
+
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 3px;
+}
+main a::after{
+    content: '🔗';
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+#bugdroid {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+/* LISTA DAS VERSÕES ANDROID */
+#titlel {
+    background-color: var(--cor4);
+    border-radius: 10px 10px 0px 0px;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    margin: -10px -10px 0px -10px;
+    font-weight: bold;
+
+}
+
+aside {
+    background-color: #83E1AD;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.261);
+}
+#lista{
+    margin-top: 50px;
+}
+
+aside>ul {
+    
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '🗸\00A0';
+
+}
